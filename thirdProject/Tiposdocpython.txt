@@ -1,0 +1,17 @@
+Tiposdoc = {}
+
+Tiposdoc['CC'] = {
+des_tipodoc: "Cédula de Ciudadania",	
+}
+
+Tiposdoc['CE'] = {
+des_tipodoc: "Cédula de Extranjeria",	
+}
+
+Tiposdoc['TI'] = {
+des_tipodoc: "Tarjeta de IDentidad",	
+}
+
+Tiposdoc['PS'] = {
+des_tipodoc: "Pasaporte",	
+}

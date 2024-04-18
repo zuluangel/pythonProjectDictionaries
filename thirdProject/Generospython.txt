@@ -1,0 +1,25 @@
+Generos = {}
+
+Generos['M'] = {
+'des_genero': "Masculino",	
+}
+
+Generos['F'] = {
+'des_genero': "Femenino",	
+}
+
+Generos['L'] = {
+'des_genero': "Lesbiana",	
+}
+
+Generos['G'] = {
+'des_genero': "Gay",	
+}
+
+Generos['B'] = {
+'des_genero': "Bisexual",	
+}
+
+Generos['T'] = {
+'des_genero': "Transexual",	
+}

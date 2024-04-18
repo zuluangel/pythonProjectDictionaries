@@ -1,0 +1,352 @@
+empleados = {}
+
+empleados[1000135417] = {
+'tipodoc': 'CC',
+'nombres': 'Yudi Xiomara', 
+'apellidos': 'Molina Forero',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 3200000,
+'cod_area': '20000',
+'correo': 'xiiomii061@gmail.com',	
+'telefono': '3212163130',
+}
+
+empleados[1000990991] = { 
+'tipodoc': 'CC',
+'nombres': 'Arleth Duvan', 
+'apellidos': 'Ramirez Vera',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 1800000,
+'cod_area': '25000',
+'correo': 'duvisram155@gmail.com',	
+'telefono': '3043248801',
+}
+
+empleados[1092157210] = {
+'tipodoc': 'CC', 
+'nombres': 'Karla Andrea', 
+'apellidos': 'Loepardi Gomez',
+'genero': 'F',
+'estado': 'R',
+'cod_ciudad': '25',
+'salario': 1600000,
+'cod_area': '30000',
+'correo': 'kathyleogo21@gmail.com',	
+'telefono': '3026697672',
+}
+
+empleados[1000988685] = {
+'tipodoc': 'CC',
+'nombres': 'Geraldine Fabiana', 
+'apellidos': 'Riaño Vargas',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '63',
+'salario': 3100000,
+'cod_area': '35000',
+'correo': 'vargicitas0923@gmail.com',	
+'telefono': '3012941663',
+}
+
+empleados[1031642892] = {
+'tipodoc': 'CC',
+'nombres': 'Daniela', 
+'apellidos': 'Navarro Ascencio',
+'genero': 'F',
+'estado': 'R',
+'cod_ciudad': '05',
+'salario': 2500000,
+'cod_area': '40000',
+'correo': 'dn803948@gmail.com	',	
+'telefono': '3045819110',
+}
+
+empleados[1026581688] = {
+'tipodoc': 'CC', 
+'nombres': 'Diana Mayerly', 
+'apellidos': 'Ahumada Mahecha',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '15',
+'salario': 2000000,
+'cod_area': '45000',
+'correo': 'mayito24mahecha@hotmail.com',	
+'telefono': '3208264111',
+}
+
+empleados[1070326569] = {
+'tipodoc': 'CC',
+'nombres': 'Carlos Manuel', 
+'apellidos': 'Mejía Herrera',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '17',
+'salario': 3400000,
+'cod_area': '20000',
+'correo': 'cmmh2599@gmail.com	',	
+'telefono': '3223347270',
+}
+
+empleados[1030697126] = {
+'tipodoc': 'CC',
+'nombres': 'Diego Fernando', 
+'apellidos': 'Guatibonza Erazo',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '25',
+'salario': 2600000,
+'cod_area': '25000',
+'correo': 'diegoguati00@gmail.com',	
+'telefono': '3042980462',
+}
+
+empleados[1000934782] = {
+'tipodoc': 'CC',
+'nombres': 'Laura Alejandra', 
+'apellidos': 'Sandoval Salazar',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 3200000,
+'cod_area': '30000',
+'correo': 'amyamyrose14@gmail.com',	
+'telefono': '3132344708',
+}
+
+empleados[1011088352] = {
+'tipodoc': 'CC',
+'nombres': 'Nicolas', 
+'apellidos': 'Henao Martinez',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 4000000,
+'cod_area': '35000',
+'correo': 'nhenao572@gmail.com',	
+'telefono': '3212647696',
+}
+
+empleados[1028481888] = {
+'tipodoc': 'TI',
+'nombres': 'Thomas Jefrey', 
+'apellidos': 'Rodriguez Ospina',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2300000,
+'cod_area': '40000',
+'correo': 'rodriguezospinathomasjefrey@gmail.com',	
+'telefono': '3154795135',
+}
+
+empleados[1034278726] = {
+'tipodoc': 'CC',
+'nombres': 'Natalia', 
+'apellidos': 'Garcia Moreno',
+'genero': 'F',
+'estado': 'R',
+'cod_ciudad': '11',
+'salario': 1900000,
+'cod_area': '45000',
+'correo': 'nataliagmoreno08@gmail.com',	
+'telefono': '3144932853',
+}
+
+empleados[1013576918] = {
+'tipodoc': 'CC', 
+'nombres': 'Daniela Valentina', 
+'apellidos': 'Barrera Oses',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 3100000,
+'cod_area': '20000',
+'correo': 'danielaoses37@gmail.com',	
+'telefono': '3154809819',
+}
+
+empleados[1000381531] = {
+'tipodoc': 'CC',
+'nombres': 'Carlos Andres', 
+'apellidos': 'Morales Montes',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2000000,
+'cod_area': '25000',
+'correo': 'carlomoralemonte6919@gmail.com',	
+'telefono': '3203495622',
+}
+
+empleados[1013099099] = {
+'tipodoc': 'CC',
+'nombres': 'Maria Paula', 
+'apellidos': 'Arias Hurtado',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2300000,
+'cod_area': '30000',
+'correo': 'mariapauah.12@gmail.com',	
+'telefono': '3223883320',
+}
+
+empleados[1073709068] = {
+'tipodoc': 'CC',
+'nombres': 'Santiago', 
+'apellidos': 'Mejia Bernal',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2800000,
+'cod_area': '35000',
+'correo': 'santy.am.arte@gmail.com',	
+'telefono': '3235021515',
+}
+
+empleados[1073695794] = {
+'tipodoc': 'CC', 
+'nombres': 'Nataly', 
+'apellidos': 'Sosa Yara',
+'genero': 'F',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2400000,
+'cod_area': '40000',
+'correo': 'natalysosa068@gmail.com',	
+'telefono': '3138694882',
+}
+
+empleados[1064193348] = {
+'tipodoc': 'TI',
+'nombres': 'Marcos Elías', 
+'apellidos': 'Montes Cruz',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '63',
+'salario': 3200000,
+'cod_area': '20000',
+'correo': 'marcosmontes498@gmail.com',	
+'telefono': '3108128401',
+}
+
+empleados[1030697209] = {
+'tipodoc': 'CC',
+'nombres': 'Luis Alberto', 
+'apellidos': 'Martinez Martinez',
+'genero': 'M',
+'estado': 'R',
+'cod_ciudad': '11',
+'salario': 2600000,
+'cod_area': '25000',
+'correo': 'mqrtinezluis9@gmail.com',	
+'telefono': '3225468806',
+}
+
+empleados[1032511437] = {
+'tipodoc': 'CC',
+'nombres': 'Richard Efrain', 
+'apellidos': 'Marcano Vargas',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2400000,
+'cod_area': '30000',
+'correo': 'RICHARDMARCANO1308@GMAIL.COM',	
+'telefono': '3202561716',
+}
+
+empleados[1000255735] = {
+'tipodoc': 'CC',
+'nombres': 'Sergio Antonio', 
+'apellidos': 'Morales Zamudio',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2600000,
+'cod_area': '35000',
+'correo': 'sergio15975@gmail.com',	
+'telefono': '3193650922',
+}
+
+empleados[1002800495] = {
+'tipodoc': 'CC', 
+'nombres': 'Giovany', 
+'apellidos': 'Zuluaga Manrique',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 3200000,
+'cod_area': '40000',
+'correo': 'giozulu.trabajo@gmail.com',	
+'telefono': '3147808975',
+}
+
+empleados[1024473795] = {
+'tipodoc': 'CC',
+'nombres': 'Jeison Alejandro', 
+'apellidos': 'Zambrano Alzate',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2900000,
+'cod_area': '45000',
+'correo': 'jeisonzambrano6@gmail.com',	
+'telefono': '3106878379',
+}
+
+empleados[1043639243] = {
+'tipodoc': 'CC',
+'nombres': 'Dilan Jose', 
+'apellidos': 'Villa Ramos',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 1900000,
+'cod_area': '20000',
+'correo': 'Jose.ramos.ssj@gmail.com',	
+'telefono': '3007053637',
+}
+
+empleados[1000129971] = {
+'tipodoc': 'CC',
+'nombres': 'Santiago', 
+'apellidos': 'Henao Otálora',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 3400000,
+'cod_area': '25000',
+'correo': 'sanhenao061@gmail.com',	
+'telefono': '3167987809',
+}
+
+empleados[1193549523] = {
+'tipodoc': 'CC',  
+'nombres': 'Brayan Steven', 
+'apellidos': 'Ramirez Diaz',
+'genero': 'M',
+'estado': 'A',
+'cod_ciudad': '11',
+'salario': 2300000,
+'cod_area': '30000',
+'correo': 'brayanstevenramirezdiaz@gmail.com',	
+'telefono': '3217558003',
+}
+
+empleados[1123800894] = {
+'tipodoc': 'CC',
+'nombres': 'Juan David', 
+'apellidos': 'Hurtado Rodriguez',
+'genero': 'M',
+'estado': 'R',
+'cod_ciudad': '11',
+'salario': 1800000,
+'cod_area': 40000',
+'correo': 'juandarito1023@gmail.com',	
+'telefono': '3054476490-3205156344',
+}

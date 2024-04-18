@@ -1,0 +1,25 @@
+Areas = {}
+
+Areas['20000'] = {
+'des_area': 'Gerencia',	
+}
+
+Areas['25000'] = {
+'des_area': 'Mercadeo-Ventas',	
+}
+
+Areas['30000'] = {
+'des_area': 'Tecnología-Sistemas',	
+}
+
+Areas['35000'] = {
+'des_area': 'Producción',	
+}
+
+Areas['40000'] = {
+'des_area': 'Contabilidad',	
+}
+
+Areas['45000'] = {
+'des_area': 'Recursos Humanos',	
+}

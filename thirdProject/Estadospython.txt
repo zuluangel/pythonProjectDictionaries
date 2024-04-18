@@ -1,0 +1,12 @@
+Estados = {}
+Estados['A'] = {
+'des_estado': "Activo",	
+}
+
+Estados['I'] = {
+'des_estado': "Inactivo",	
+}
+
+Estados['R'] = {
+'des_estado': "Retirado",	
+}

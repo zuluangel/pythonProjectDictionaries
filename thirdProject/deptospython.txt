@@ -1,0 +1,128 @@
+departamentos = {}
+
+departamentos['91'] = {
+'nom_depto': 'AMAZONAS'
+}
+
+departamentos['05'] = {
+'nom_depto': 'ANTIOQUIA'
+    }
+departamentos['81'] = {
+'nom_depto': 'ARAUCA'
+}
+
+departamentos['88'] = {
+'nom_depto': 'ARCHIPIELAGO DE SAN ANDRES'
+}
+
+departamentos['08'] = {
+'nom_depto': 'ATLANTICO'
+}
+
+departamentos['11'] = {
+'nom_depto': 'BOGOTA D.C.'
+}
+
+departamentos['13'] = {
+'nom_depto': 'BOLIVAR'
+}
+
+departamentos['15'] = {
+'nom_depto': 'BOYACA'
+}
+
+departamentos['17'] = {
+'nom_depto': 'CALDAS'    
+}
+
+departamentos['18'] = {
+'nom_depto': 'CAQUETA'    
+}
+
+departamentos['85'] = {
+'nom_depto': 'CASANARE'   
+}
+
+departamentos['19'] = {
+'nom_depto': 'CAUCA'    
+}
+
+departamentos['20'] = {
+'nom_depto': 'CESAR'    
+}
+
+departamentos['27'] = {
+'nom_depto': 'CHOCO'    
+}
+
+departamentos['23'] = {
+'nom_depto': 'CORDOBA'    
+}
+
+departamentos['25'] = {
+'nom_depto': 'CUNDINAMARCA'    
+}
+
+departamentos['94'] = {
+'nom_depto': 'GUAINIA'    
+}
+
+departamentos['95'] = {
+'nom_depto': 'GUAVIARE'    
+}
+
+departamentos['41'] = {
+'nom_depto': 'HUILA'    
+}
+
+departamentos['44'] = {
+'nom_depto': 'GUAJIRA'    
+}
+
+departamentos['47'] = {
+'nom_depto': 'MAGDALENA'    
+}
+
+departamentos['50'] = {
+'nom_depto': 'META'    
+}
+
+departamentos['52'] = {
+'nom_depto': 'NARI�O'    
+}
+
+departamentos['54'] = {
+'nom_depto': 'NORTE DE SANTANDER'    
+}
+
+departamentos['86'] = {
+'nom_depto': 'PUTUMAYO'    
+}
+
+departamentos['63'] = {
+'nom_depto': 'QUINDIO'    
+}
+
+departamentos['66'] = {
+'nom_depto': 'RISARALDA'    
+}
+
+departamentos['68'] = {
+'nom_depto': 'SANTANDER'    
+}
+
+departamentos['73'] = {
+'nom_depto':: 'TOLIMA'    
+}
+
+departamentos['76'] = {
+'nom_depto': 'VALLE DEL CAUCA'    
+}
+
+departamentos['97'] = {
+'nom_depto': 'VAUPES'    
+}
+
+departamentos['99'] = {
+'nom_depto': 'VICHADA'
+}
