@@ -559,86 +559,299 @@ Areas['45000'] = {
 'des_area': 'Recursos Humanos', 
 }
 
-#gender = input('Enter a gender')
-""" if gender in Generos: 
-    print(f'The gender {gender} is: {Generos[gender]['des_genero']}')
-else:
-    print('The gender is deprecated, you are an absolute sexual depraved')   """
+menu = int(input(f"This is the welcome Menu: \n for searching an existing employee enter the number 1  \n for creating a new one enter the number 2 \n for updating an existing one press the number 3 \n\n"))
 
-#state = input('Enter a State')
-""" if state in Estados:
-    print(f'The state of the person you entered is {state}: {Estados[state]['des_estado']}')
-else:
-    print('The state you entered does not exist in th DB') """
-
-
-#department = input('Enter a Department from Colombia')
-""" if department in departamentos:
-    print(f'The department from Colombia you entered is {department}: {departamentos[department]['nom_depto']}')
-else:
-    print('The department you entered does not exist in th DB') """
-
-
-# employee = int(input('Enter an Id number from a employed: '))
-
-# if employee in empleados:
-#     document = empleados[employee]['tipodoc']
-#     gender = empleados[employee]['genero']
-#     state = empleados[employee]['estado']
-#     department = empleados[employee]['cod_ciudad']
-#     area = empleados[employee]['cod_area']
-
-#     if document in Idtypedoc:
-#         descriptionTd = Idtypedoc[document]['tipodoc']
-#     else:
-#         descriptionTd = 'Document type does not exist'
-#     if gender in Generos:
-#         descGender = Generos[gender]['des_genero']
-#     else: 
-#         descGender = 'This gender does not exist'
-#     if state in Estados:
-#         descState = Estados[state]['des_estado']
-#     else:
-#         descState = 'This state does not exist'
-#     if department in departamentos:
-#         descDepartment = departamentos[department]['nom_depto']
-#     else:
-#         descDepartment = 'This department does not exist'
-#     if area in Areas:
-#         descArea = Areas[area]['des_area']
-#     else: 
-#         descArea = 'This Area does not exist'
-#     print(f'The name of the employed id number {employee}: {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, earns an amount of {empleados[employee]['salario']} per month, the email is {empleados[employee]['correo']}, the phone number is {empleados[employee]['telefono']}, the gender of the subject is {empleados[employee]['genero']} {descGender} , the state is {empleados[employee]['estado']} {descState}, Id type {empleados[employee]['tipodoc']} is {descriptionTd}, was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ')
+def createNewEmployee():
+    while True:
+        newEmployee = input("Please enter the ID number for the new employee: ") 
+        if newEmployee == "":
+           print("You have not written anything.")
+           break
+        else: 
+            newEmployee1 = int(newEmployee)           
+        count = 0
+        ok = True 
+        while count < 3:
+            tipodoc = input("Enter the document type: ").upper()
+            if tipodoc in Idtypedoc:              
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break           
+            print("Document type not valid")
+            print ("I am going to kick you out!")               
+        if count == 2:
+            break
+        if not ok:  
+            print("Byeeeee, the document type entered is incorrect.")
+        else:
+            print("Keep going!")
+    
+        count = 0
+        ok = True 
+        while count < 3:
+            nombres = input("Write the firstname: ").upper()        
+            if len(nombres) != 0:            
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break 
+            print("You have not written anything.")          
+            print("I am going to kick you out!") 
+        if count == 2:
+            break              
+        if not ok:  
+            print("Byeeeee! You have not written anything.")
+        else:
+            print("Keep going!")
+    
+        count = 0
+        ok = True 
+        while count < 3:
+            apellidos = input("Write the lastname: ").upper()   
+            if len(apellidos) != 0:            
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break 
+            print("You have not written anything.")          
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+    
+        if not ok:  
+            print("Byeeeee! You have not written anything.")
+        else:
+            print("Keep going!") 
+    
         
-# else:
-#     print(f'The employeeed you entered {employee} does not exist in the DB')
+        count = 0
+        ok = True 
+    
+        while count < 3:
+            genero = input("Write the gender: ").upper()
+            if genero in Generos:              
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break           
+            print("The gender is not valid!")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+    
+        if not ok:  
+            print("Byeeeee, you have entered the wrong gender")
+        else:
+            print("Keep going!")
+            
+    
+        count = 0
+        ok = True 
+        while count < 3:
+            estado = input("Enter the state: ").upper()
+            if estado in Estados:              
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break           
+            print("The state entered is not valid")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+    
+        if not ok:  
+            print("Byeeeee, you have entered the wrong state")
+        else:
+            print("Keep going!")
+            
+        count = 0
+        ok = True 
+        while count < 3:
+            cod_ciudad = input(f"Enter the deparment birth of {nombres} {apellidos} ")
+            if cod_ciudad in departamentos:              
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break           
+            print("The deparment you entered is not valid")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+                 
+        if not ok:  
+            print("Byeeeee, you have entered the wrong department")
+        else:
+            print("Keep going")
+            salario = input("How much does he/she earn: ")
+            
+        count = 0
+        ok = True 
+        while count < 3:
+            cod_area = input("Enter the code of the area it belongs to: ")
+            if cod_area in Areas:              
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break           
+            print("The area you entered is not valid")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+    
+        if not ok:  
+            print("Byeeeee, you have entered the wrong area")
+        else:
+            print("Keep going!")
+    
+        count = 0
+        ok = True 
+        while count < 3:
+            correo = input("Write the email: ").lower()
+            if len(correo) != 0:            
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break 
+            print("You have not written anything.")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+    
+        if not ok:  
+            print("Byeeeee, You have not written anything!")
+        else:
+            print("Keep going!") 
+    
+        count = 0
+        ok = True 
+        while count < 3:
+            telefono = input("Write the phone number: ")
+            if len(telefono) != 0:            
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break 
+            print("You have not written anything.")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break
+                              
+        if not ok:  
+            print("Byeeeee, You have not written anything.")
+        else:
+            print("Keep going!")
+            
+            print(f"The data of {nombres} {apellidos} have been succesfully filled!!")
+    
+        empleados[newEmployee1]={
+        "tipodoc": tipodoc, 
+        "nombres": nombres,
+        "apellidos": apellidos,
+        "genero": genero,
+        "estado": estado,
+        "cod_ciudad": cod_ciudad,
+        "salario": salario,
+        "cod_area": cod_area,
+        "correo": correo,
+        "telefono" : telefono,
+        }
+        if ok:    
+            
+            print(empleados[newEmployee1])
 
-while True:
-    newEmployee = input('Enter a new document number to insert: ')
-    if newEmployee == '':
-        break
-    documentType = input('Enter the document type: ').upper
-    name = input('Write the name of the new employee: ')
-    lastname = input('Write the lastname: ')
-    newGender = input('Enter the gender: ')
-    newState = input('Enter the state: ')
-    codCity= input('Enter the birth department: ')
-    salary = input(f'Type the amount earned by {name}: ')
-    codArea = input('Enter the area where it works: ')
-    email = input('type the email: ')
-    phone = input('Enter the phone number: ')
+def findEmployee():
+    employee = int(input('Enter an Id number from a employed: '))
+
+    if employee in empleados:
+        document = empleados[employee]['tipodoc']
+        gender = empleados[employee]['genero']
+        state = empleados[employee]['estado']
+        department = empleados[employee]['cod_ciudad']
+        area = empleados[employee]['cod_area']
+    
+        if document in idTypedoc:
+            descriptionTd = idTypedoc[document]['tipodoc']
+        else:
+            descriptionTd = 'Document type does not exist'
+        if gender in Generos:
+            descGender = Generos[gender]['des_genero']
+        else:
+            descGender = 'This gender does not exist'
+        if state in Estados:
+            descState = Estados[state]['des_estado']
+        else:
+            descState = 'This state does not exist'
+        if department in departamentos:
+            descDepartment = departamentos[department]['nom_depto']
+        else:
+            descDepartment = 'This department does not exist'
+        if area in Areas:
+            descArea = Areas[area]['des_area']
+        else:
+            descArea = 'This Area does not exist'
+        print(f"The name of the employed id number {employee}: {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, earns an amount of {empleados[employee]['salario']} per month, the email is {empleados[employee]['correo']}, the phone number is {empleados[employee]['telefono']}, the gender of the subject is {empleados[employee]['genero']} {descGender} , the state is {empleados[employee]['estado']} {descState}, Id type {empleados[employee]['tipodoc']} is {descriptionTd}, was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ")
+           
+    else:
+        print(f"The ID number you entered {employee} does not exist in the DB")
+        
+def updateEmployee():
+    employee = int(input('Enter an ID number from a employed to modify: '))
+    document = empleados[employee]['tipodoc']
+    if itemToModify in empleados:
+        document = empleados[employee]['tipodoc']
+    
+    if employee in empleados:
+        document = empleados[employee]['tipodoc']
+        gender = empleados[employee]['genero']
+        state = empleados[employee]['estado']
+        department = empleados[employee]['cod_ciudad']
+        area = empleados[employee]['cod_area']
+    
+        if document in idTypedoc:
+            descriptionTd = idTypedoc[document]['tipodoc']
+        else:
+            descriptionTd = 'Document type does not exist'
+        if gender in Generos:
+            descGender = Generos[gender]['des_genero']
+        else:
+            descGender = 'This gender does not exist'
+        if state in Estados:
+            descState = Estados[state]['des_estado']
+        else:
+            descState = 'This state does not exist'
+        if department in departamentos:
+            descDepartment = departamentos[department]['nom_depto']
+        else:
+            descDepartment = 'This department does not exist'
+        if area in Areas:
+            descArea = Areas[area]['des_area']
+        else:
+            descArea = 'This Area does not exist'
+        print(f"The name of the employed id number {employee}: {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, earns an amount of {empleados[employee]['salario']} per month, the email is {empleados[employee]['correo']}, the phone number is {empleados[employee]['telefono']}, the gender of the subject is {empleados[employee]['genero']} {descGender} , the state is {empleados[employee]['estado']} {descState}, Id type {empleados[employee]['tipodoc']} is {descriptionTd}, was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ")
+           
+    else:
+        print(f"The ID number you entered {employee} does not exist in the DB")
+        
+if menu == 1:
+    findEmployee()
+elif menu == 2:
+    createNewEmployee()
+elif menu == 3:
+    updateEmployee()
+else:
+    print("Wrong decision")
 
 
-    empleados [newEmployee] = {
-        'tipodoc' : documentType,
-        'nombres' : name,
-        'apellidos': lastname,
-        'genero': newGender,
-        'estado': newState,
-        'cod_ciudad': codCity,
-        'salario': salary,
-        'cod_area': codArea,
-        'correo': email,
-        'telefono': phone,
-    }
-print(empleados)
+        
+# if __name__ == '__main__':
+#     main()
