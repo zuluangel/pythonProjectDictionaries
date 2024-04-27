@@ -559,8 +559,6 @@ Areas['45000'] = {
 'des_area': 'Recursos Humanos', 
 }
 
-menu = int(input(f"This is the welcome Menu: \n for searching an existing employee enter the number 1  \n for creating a new one enter the number 2 \n for updating an existing one press the number 3 \n\n"))
-
 def createNewEmployee():
     while True:
         newEmployee = input("Please enter the ID number for the new employee: ") 
@@ -689,7 +687,25 @@ def createNewEmployee():
             print("Byeeeee, you have entered the wrong department")
         else:
             print("Keep going")
-            salario = input("How much does he/she earn: ")
+            
+        count = 0
+        ok = True 
+        while count < 3:
+            salario = input(f"Enter the salary earned by {nombres} {apellidos}: ")
+            if len(salario) != 0:            
+                break
+            count += 1
+            if count > 1:            
+                ok = False            
+                break 
+            print("You have not written anything.")
+            print("I am going to kick you out!") 
+        if count == 2:
+            break                              
+        if not ok:  
+            print("Byeeeee, You have not written anything.")
+        else:
+            print("Keep going!")
             
         count = 0
         ok = True 
@@ -770,7 +786,7 @@ def createNewEmployee():
             print(empleados[newEmployee1])
 
 def findEmployee():
-    employee = int(input('Enter an Id number from a employed: '))
+    employee = int(input('Enter an ID number from a employee: '))
 
     if employee in empleados:
         document = empleados[employee]['tipodoc']
@@ -779,8 +795,8 @@ def findEmployee():
         department = empleados[employee]['cod_ciudad']
         area = empleados[employee]['cod_area']
     
-        if document in idTypedoc:
-            descriptionTd = idTypedoc[document]['tipodoc']
+        if document in Idtypedoc:
+            descriptionTd = Idtypedoc[document]['tipodoc']
         else:
             descriptionTd = 'Document type does not exist'
         if gender in Generos:
@@ -799,59 +815,52 @@ def findEmployee():
             descArea = Areas[area]['des_area']
         else:
             descArea = 'This Area does not exist'
-        print(f"The name of the employed id number {employee}: {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, earns an amount of {empleados[employee]['salario']} per month, the email is {empleados[employee]['correo']}, the phone number is {empleados[employee]['telefono']}, the gender of the subject is {empleados[employee]['genero']} {descGender} , the state is {empleados[employee]['estado']} {descState}, Id type {empleados[employee]['tipodoc']} is {descriptionTd}, was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ")
+        print(f"The name of the employed id number {employee}: \n {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, \n earns an amount of {empleados[employee]['salario']} per month, \n the email is {empleados[employee]['correo']}, \n the phone number is {empleados[employee]['telefono']}, \n the gender of the subject is {empleados[employee]['genero']} {descGender}, \n the state is {empleados[employee]['estado']} {descState}, \n Id type {empleados[employee]['tipodoc']} is {descriptionTd}, \n was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ")
            
     else:
         print(f"The ID number you entered {employee} does not exist in the DB")
         
 def updateEmployee():
-    employee = int(input('Enter an ID number from a employed to modify: '))
-    document = empleados[employee]['tipodoc']
-    if itemToModify in empleados:
-        document = empleados[employee]['tipodoc']
-    
-    if employee in empleados:
-        document = empleados[employee]['tipodoc']
-        gender = empleados[employee]['genero']
-        state = empleados[employee]['estado']
-        department = empleados[employee]['cod_ciudad']
-        area = empleados[employee]['cod_area']
-    
-        if document in idTypedoc:
-            descriptionTd = idTypedoc[document]['tipodoc']
+
+    while True:
+        employee = int(input('Enter an ID number from a employee to modify: '))                   
+        
+        print('Please select the item you want to modify')
+        itemToUpdate = int(input('To modify the document type... press 1 \n To modify the gender... press 2 \n To modify the state... press 3 \n To modify the department... press 4 \n To modify the area... press 5 \n To modify salary... press 6 \n To modify the firstname... press 7 \n To modify the lastname... press 8 \n To modify the email... press 9 \n To modify the phone number... press 10 \n\n '))
+
+        if itemToUpdate == 1:
+            Idtypedoc["tipodoc"] = input('Enter the new value')
+        elif itemToUpdate == 2:
+            Generos['des_genero'] = input('Enter the new value')
+        elif itemToUpdate == 3:
+            Estados['des_estado'] = input('Enter the new value')
+        elif itemToUpdate == 4:
+            departamentos['nom_depto'] = input('Enter the new value')
+        elif itemToUpdate == 5:
+            Areas['des_area'] = input('Enter the new value')
+        elif itemToUpdate == 6:
+            empleados['salario'] = input('Enter the new value')
+        elif itemToUpdate == 7:
+            empleados['nombres'] = input('Enter the new value')
+        elif itemToUpdate == 8:
+            empleados['apellidos'] = input('Enter the new value')
+        elif itemToUpdate == 9:
+            empleados['correo'] = input('Enter the new value')
+        elif itemToUpdate == 10:
+            empleados['telefono'] = input('Enter the new value')
+        elif itemToUpdate == employee:
+            empleados[employee] = employee
         else:
-            descriptionTd = 'Document type does not exist'
-        if gender in Generos:
-            descGender = Generos[gender]['des_genero']
-        else:
-            descGender = 'This gender does not exist'
-        if state in Estados:
-            descState = Estados[state]['des_estado']
-        else:
-            descState = 'This state does not exist'
-        if department in departamentos:
-            descDepartment = departamentos[department]['nom_depto']
-        else:
-            descDepartment = 'This department does not exist'
-        if area in Areas:
-            descArea = Areas[area]['des_area']
-        else:
-            descArea = 'This Area does not exist'
-        print(f"The name of the employed id number {employee}: {empleados[employee]['nombres']} {empleados[employee]['apellidos']}, earns an amount of {empleados[employee]['salario']} per month, the email is {empleados[employee]['correo']}, the phone number is {empleados[employee]['telefono']}, the gender of the subject is {empleados[employee]['genero']} {descGender} , the state is {empleados[employee]['estado']} {descState}, Id type {empleados[employee]['tipodoc']} is {descriptionTd}, was born in the department of {empleados[employee]['cod_ciudad']} {descDepartment}, ")
-           
+            ('Option not valid, select again')  
+
+while True:
+    menu = int(input(f"This is the welcome Menu: \n for searching an existing employee enter the number 1  \n for creating a new one enter the number 2 \n for updating an existing one press the number 3 \n\n"))
+
+    if menu == 1:
+        findEmployee()
+    elif menu == 2:
+        createNewEmployee()
+    elif menu == 3:
+        updateEmployee()
     else:
-        print(f"The ID number you entered {employee} does not exist in the DB")
-        
-if menu == 1:
-    findEmployee()
-elif menu == 2:
-    createNewEmployee()
-elif menu == 3:
-    updateEmployee()
-else:
-    print("Wrong decision")
-
-
-        
-# if __name__ == '__main__':
-#     main()
+        print("Wrong decision")
